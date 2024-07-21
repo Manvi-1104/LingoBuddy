@@ -1,0 +1,65 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playflair+Display+SC:wght@700&family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="bot_new.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="config.js"></script>
+    <script defer src="bot_new.js"></script>
+</head>
+<body>
+    <header>
+        <a href="/"><span>TutorBot</span></a>
+    </header>
+    <section>
+        <div>
+            <!-- <h2>Improve your reading and writing skills.<br> </h2> -->
+        </div>
+    </section>
+    <section class="main-container">
+        <div class="nav-options">
+            <h3>Choose what you want to learn:</h3>
+            <button id="b1">Grammar Correction </button>            
+            <button id="b2">Writing Style Suggestions</button>
+            <button id="b3">Vocabulary Enhancement</button>
+            <button id="b4"><a href="speech.html">Pronounciation Guide</a> </button>
+            
+        </div>
+        <div class="textbox-area">
+            <div class="speech-bubble-ai" id="speech-bubble-ai">
+                <p id="heading"></p>
+            </div>
+            <div class="setup-input-container" id="setup-input-container">
+                <textarea id="setup-textarea" placeholder="an evil genius want to take over the world"></textarea>
+                <button class="send-btn" id="send-btn" aria-label="send">
+                    <img src="sendbtn.png">
+                </button>
+            </div>
+            <section class="output-container" id="output-container">
+                <div id="output-img-container" class="output-img-container"></div>
+                <h1 id="output-title"></h1>
+                <h2 id="output-stars"></h2>
+                <p id="output-text"></p>
+            </section>
+        </div>
+
+    </section>
+    
+    <footer>
+        &copy; 2024 LingoBuddy all rights reserved
+    </footer>
+    
+</body>
+</html>

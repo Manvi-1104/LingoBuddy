@@ -1,0 +1,63 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css"/>
+    <title>Sign up</title>
+</head>
+<body>
+    <h1>Sign up to Learn!</h1>
+    <form id="form-signup">
+        <div id="signup-box">
+            <h4>Email Address:</h4>
+            <textarea class="text-box" id="email"></textarea>
+            <h4>Password:</h4>
+            <textarea class="text-box" id="password"></textarea>
+            <h4>Confirm Password:</h4>
+            <textarea class="text-box" id="confirm-password"></textarea>
+            <button class="login-btns" id="submit">Submit</button>
+        </div>
+    </form>
+
+    <script>
+        document.getElementById('submit').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent form from submitting
+
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+
+            if (password !== confirmPassword) {
+                alert('Passwords do not match.');
+                return;
+            }
+
+            fetch('http://localhost:3000/signup', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ email, password }),
+            })
+            .then(response => {
+                if (!response.ok) {
+                    return response.text().then(text => { throw new Error(text) });
+                }
+                return response.text();
+            })
+            .then(data => {
+                alert(data);
+                window.location.href = 'bot.html';
+            })
+            .catch(error => {
+                alert(error.message);
+                window.location.href = 'login.html';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Pitch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playflair+Display+SC:wght@700&family=Poppins:wght@400;700&display=swap">
+    <link rel="stylesheet" href="bot.css">
+    <script src="config.js"></script>
+    <script defer src="bot.js"></script>
+    
+
+</head>
+<body>
+    <header>
+        <a href="/"><span>TutorBot</span></a>
+
+    </header>
+    <main>
+        <!--the setup-->
+        <section id="setup-container">
+            <div class="setup-inner">
+                <img src="img7.png">
+                <div class="speech-bubble-ai" id="speech-bubble-ai">
+                    <p id="movie-boss-text" >
+                        Skills you want to learn...
+
+                    </p>
+                </div>
+            </div>
+            <div class="setup-inner setup-input-container" id="setup-input-container">
+                <textarea id="setup-textarea" placeholder="an evil genius want to take over the world"></textarea>
+                <button class="send-btn" id="send-btn" aria-label="send">
+                    <img src="sendbtn.png">
+                </button>
+            </div>
+
+        </section>
+<!-- output -->
+        <section class="output-container" id="output-container">
+            <div id="output-img-container" class="output-img-container"></div>
+            <h1 id="output-title"></h1>
+            <h2 id="output-stars"></h2>
+            <p id="output-text"></p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 LingoBuddy all rights reserved
+    </footer>
+    <!-- <script type="module" src="bot.js"></script> -->
+
+</body>
+</html>

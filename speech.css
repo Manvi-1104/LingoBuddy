@@ -1,0 +1,77 @@
+body{
+    background-image: url(img9.png);
+}
+
+header {
+    background-color: #67595e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+}
+h1{
+    color: white;
+}
+
+.transcribe-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.transcribe-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #e08ba3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.transcribe-button:hover {
+    background-color: #b3003c;
+}
+
+.transcribe-button.stop {
+    background-color: #dc3545; /* Red color for the stop button */
+}
+
+.transcribe-button.stop:hover {
+    background-color: #c82333; /* Darker red on hover */
+}
+
+.transcribe-transcript {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.transcribe-words-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* This adds some space between the items */
+    margin-bottom: 20px; /* Add some space below the container */
+}
+.transcribe-word {
+    
+    background-color: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.transcribe-complex-word {
+    background-color: #ffc107;
+}
+
+.transcribe-pronounce-button {
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 10px;
+}

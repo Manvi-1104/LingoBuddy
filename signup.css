@@ -1,0 +1,86 @@
+:root {
+    --white: #ffffff;
+    --light: whitesmoke;
+    --light-grey: #e8e8e8;
+    --pink: #ff176b;
+    --medium-dark: #777;
+    --dark: #242526;
+    --border-rad-lg: 15px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+h4 {
+    font-family: 'Playfair Display SC', serif;
+    text-align: center;
+}
+
+
+
+p {
+    line-height: 1.35em;
+}
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    margin-left: 44%;
+}
+.login-btns {
+    display: flex;
+    gap: 40px; /* Space between buttons */ 
+    margin-top: 5%;
+    margin-left: 47%;
+    height: 20px;
+    border-radius: 5px;
+    font-size: large;
+    height: auto;
+    text-align: center;
+    border: #000000 2px solid;
+    color: #0a0001; /* Pushes the buttons to the right */
+}
+
+#login-box {
+    background-color: #e7a1a7;
+    border: white 1px solid; /* Remove the border */
+    border-radius: 10px; 
+    box-shadow: 0px 0px 5px rgba(248, 248, 248, 0.1);
+    font-size: large;
+    color: white;
+    height: 50%;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+} 
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-image: url('img5.png');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

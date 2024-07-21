@@ -1,0 +1,320 @@
+:root {
+    --white: #ffffff;
+    --light: whitesmoke;
+    --white2: #ffffff; 
+    --light-grey: #e8e8e8;
+    --medium-dark: #777;
+    --dark: #242526;
+    --pink-light: #f9c8cc;
+    --border-rad-lg: 15px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-color: #f5dcd5;
+    background-image: url(img6.png);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #67595e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+    padding: 1em 0;
+}
+
+header a {
+    color: var(--white);
+    font-size: 2.3em;
+    text-decoration: none;
+    padding: 0.75em 0;
+}
+
+header span {
+    font-weight: 700;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    /* background-color: #f5dcd5; */
+    padding: 2em;
+    height: calc(100vh - 100px); /* Adjust based on header/footer height */
+    width: 100%;
+    max-width: 1200px;
+}
+
+.nav-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    flex: 1;
+}
+
+.nav-options h3 {
+    margin-bottom: 1em;
+}
+
+.nav-options button {
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: left;
+}
+
+.nav-options button:hover {
+    color: #000;
+}
+
+.speech-bubble-ai {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+.speech-bubble-ai p {
+    color: #000;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.setup-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.setup-inner textarea {
+    background-color: #fff;
+    border: 1px solid #000;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 1em;
+    border-radius: var(--border-rad-lg);
+}
+
+.send-btn {
+    align-self: flex-end;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: var(--border-rad-lg);
+    padding: 0.5em 1em;
+}
+
+.send-btn img {
+    width: 1.6em;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: .8em;
+    font-size: .7em;
+    text-align: center;
+}
+
+:root {
+    --white: #ffffff;
+    --light: whitesmoke;
+    --white2: #ffffff; 
+    --light-grey: #e8e8e8;
+    --medium-dark: #777;
+    --dark: #242526;
+    --pink-light: #f9c8cc;
+    --border-rad-lg: 15px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-color: #e4b7ac;
+    background-image: url(img6.png);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    background-color: #67595e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3em;
+    padding: 1em 0;
+}
+
+header a {
+    color: var(--white);
+    font-size: 2.3em;
+    text-decoration: none;
+    padding: 0.75em 0;
+}
+
+header span {
+    font-weight: 700;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 2em;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 100px); /* Adjust based on header/footer height */
+}
+
+.nav-options {
+    background-color: #e8aba1;
+    padding: 20px;
+    align-self:flex-start;
+    height: 55%;
+    width: 25%;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nav-options h3 {
+    margin-bottom: 1em;
+}
+
+.nav-options button {
+    background-color: transparent;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: left;
+}
+
+.nav-options button:hover {
+    color: #000;
+}
+
+.textbox-area h3{
+    margin-bottom: 5em;
+}
+
+
+button {
+    background-color: #4CAF50; /* Green background */
+    border: none; /* Remove borders */
+    color: rgb(255, 233, 229); /* White text */
+    padding: 15px 32px; /* Some padding */
+    text-align: center; /* Centered text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make the button an inline element */
+    font-size: 16px; /* Increase font size */
+    margin: 4px 2px; /* Some margin */
+    transition-duration: 0.4s; /* Smooth transition for hover effect */
+    cursor: pointer; /* Pointer/hand icon on hover */
+    border-radius: 12px; /* Rounded corners */
+}
+
+button:hover {
+    background-color: white; /* White background on hover */
+    color: black; /* Black text on hover */
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 17px 50px 0 rgba(0, 0, 0, 0.19); /* Add shadow */
+}
+
+.textbox-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+}
+
+.speech-bubble-ai {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+.speech-bubble-ai p {
+    color: #000;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.setup-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.setup-input-container textarea {
+    background-color: #fff;
+    border: 1px solid #000;
+    width: 80%;
+    height: 50px;
+    padding: 10px;
+    border-radius: var(--border-rad-lg);
+}
+
+.send-btn {
+    margin-left: 10px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: var(--border-rad-lg);
+    padding: 0.5em 1em;
+}
+
+.send-btn img {
+    width: 1.6em;
+    vertical-align: middle;
+}
+
+.output-container{
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: .8em;
+    font-size: .7em;
+    text-align: center;
+}

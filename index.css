@@ -1,0 +1,210 @@
+/* #heading{
+    text-align: center;
+    margin: 0;
+
+}
+.icon{
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px;
+}
+.header{
+    display: flex;
+   
+}
+.img{
+    background-image: url('img1.jpg');
+    
+}
+#text{
+    width: 1000px;
+    height: auto;
+    margin: 10px;
+}
+.input {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.send{
+    width: 40px; 
+    height: auto; 
+    cursor: pointer; 
+
+} 
+#sendbutton {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+} */
+
+
+ /* body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    text-align: center;
+    margin: 0;
+}
+
+.icon {
+    width: 50px; 
+    height: auto; 
+    margin-right: 10px;
+}
+
+#heading {
+    text-align: center;
+    
+}
+
+.img {
+    height: 500px;
+    width: auto;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#text {
+    width: 750px;
+    height: auto;
+    margin-right: 3px;
+}
+
+.send {
+    width: 40px; 
+    height: auto; 
+    cursor: pointer;
+} */
+
+:root {
+    --white: #ffffff;
+    --light: whitesmoke;
+    --white2: #ffffff; 
+    --light-grey: #e8e8e8;
+    --pink: #e78484;
+    --medium-dark: #777;
+    --dark: #242526;
+    --pink-light: #f9c8cc;
+    --border-rad-lg: 15px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('img2.png'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    height: 80px;
+    background-color: #67595e; /* Optional: add background color to make header text more readable */
+}
+
+.icon {
+    width: 70px; /* Adjust the width as needed */
+    height: auto; /* Keeps the aspect ratio */
+    margin-right: 10px;
+}
+
+
+#heading {
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+
+.input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: add background color to make input more readable */
+    padding: 10px; /* Optional: add padding for better layout */
+    border-radius: 10px; /* Optional: add border radius for better aesthetics */
+}
+
+/* #text {
+    width: 300px;
+    height: auto;
+    margin-right: 10px;
+} */
+
+.btn {
+    padding: 10px 20px;
+    background-color: #e7a1a7;
+    width: 200px;
+    border: white 1px solid; /* Remove the border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+.buttons-container {
+    position: absolute;
+    top: 500px;
+    left: 100px;
+    display: flex;
+    gap: 100px; /* Adds space between the buttons */
+}
+
+
+.send {
+    width: 40px; /* Adjust the width as needed */
+    height: auto; /* Keep the aspect ratio */
+}
+
+.nav-button {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    margin-left: auto;
+    margin-left: 50%; 
+    background-color: #67595e;
+    width: auto;/* Pushes the buttons to the right */
+}
+
+.navbtn{
+    background-color: #67595e;
+    border: white 1px solid; /* Remove the border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(248, 248, 248, 0.1);
+    font-size: large;
+    color: white;
+
+}
+
+footer {
+    background-color: var(--dark);
+    color: var(--light);
+    padding: .8em;
+    font-size: .7em;
+    text-align: center;
+    margin-top: 50%;
+    
+}

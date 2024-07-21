@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css"/>
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <div id="login-box">
+        <h4>Email Address:</h4>
+        <input type="text" id="email" class="text-box"/>
+        <h4>Password:</h4>
+        <input type="password" id="password" class="text-box"/>
+        <button class="login-btns" id="submit-btn">Submit</button>
+        <button class="login-btns" id="signup-btn">Sign Up for New User</button>
+    </div>
+
+    <script>
+        document.getElementById('submit-btn').addEventListener('click', function() {
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            fetch('http://localhost:3000/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, password })
+            })
+            .then(response => {
+                if (response.status === 200) {
+                    window.location.href = 'bot_new.html';
+                } else {
+                    alert('Invalid credentials. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred. Please try again later.');
+            });
+        });
+
+        document.getElementById('signup-btn').addEventListener('click', function() {
+            window.location.href = 'signup.html';
+        });
+    </script>
+</body>
+</html>
